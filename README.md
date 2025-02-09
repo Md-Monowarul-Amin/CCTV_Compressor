@@ -19,9 +19,3 @@ Traditional CCTV systems generate lengthy recordings, making it tedious to revie
 - **Python** – Core programming language for video processing.  
 - **OpenCV** – For motion detection, frame extraction, and video reconstruction.  
 - **YOLOv11** – For advanced human detection.  
-
-## 📦 Installation & Setup  
-### 1️⃣ Clone this repository  
-```bash
-git clone https://github.com/yourusername/cctv-video-compression.git
-cd cctv-video-compression
