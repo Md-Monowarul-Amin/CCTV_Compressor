@@ -101,7 +101,7 @@ def detect_entry(person_id : int, transformed_coordinates:list):
         if person_dict[person_id]["x_t"] < person_dict[person_id]["prev_x_t"] and x_t < .5:
             person_dict[person_id]["action"] = "enter"
 
-        elif person_dict[person_id]["x_t"] > person_dict[person_id]["prev_x_t"] and x_t < .5:
+        elif person_dict[person_id]["x_t"] -.01 > person_dict[person_id]["prev_x_t"] and x_t < .5:
             person_dict[person_id]["action"] = "out"
             print("OUT: ", person_dict[person_id]["x_t"], person_dict[person_id]["prev_x_t"])
         person_dict[person_id]["last_track"] = time.time()
@@ -147,7 +147,7 @@ while ret:
                 cv2.putText(frame, entry_text, (120, 20), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0,0, 255), 2)
 
                 cv2.rectangle(frame, (x, y), (w, h), (0,255,0), 2)
-                cv2.putText(frame, "Person" + str(x_t) + " ", (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0,255,0), 2)
+                cv2.putText(frame, "Person" + " ", (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0,255,0), 2)
 
                 if x_t < 0:
                     saved_frames.append(frame)
