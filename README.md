@@ -11,6 +11,7 @@ Traditional CCTV systems generate lengthy recordings, making it tedious to revie
 ![Exit](out.png)
 
 ✅ **Smart Video Reconstruction** – Generates a **shorter** video containing only relevant events. Generated a shorter video of only four seconds (selected_frames_video.mp4) from a eighteen second video(entry_room.webm).
+
 ✅ **Optimized Storage Usage** – Significantly reduces video size without missing crucial details.  
 ✅ **Faster Footage Review** – Helps users quickly navigate through key moments.  
 
