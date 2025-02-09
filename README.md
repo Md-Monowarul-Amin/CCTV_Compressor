@@ -6,6 +6,7 @@ Traditional CCTV systems generate lengthy recordings, making it tedious to revie
 
 ## 🚀 Features  
 ✅ **Motion-Based Frame Extraction** – Captures frames only when human movement is detected at entry/exit points.
+
 ![Entry](enter.png)
 ![Exit](out.png)
 
